@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios3</title>
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <form action="procesar3.php" method="get">
+
+        <input type="text" name="nombre" value="John">
+
+    </form>
+    <h1>Ejercicio 2</h1>
+    <form action="procesar3.php" method="get">
+
+        <input type="text" name="nombre" value="John" readonly>
+
+    </form>
+    <h1>Ejercicio 3</h1>
+    <form action="procesar3.php" method="get">
+
+        <input type="text" name="nombre" value="John" disabled>
+
+    </form>
+    <h1>Ejercicio 4</h1>
+    <form action="procesar3.php" method="get">
+
+        <input type="text" name="nombre" disabled>
+
+    </form>
+    <h1>Ejercicio 5</h1>
+    <form action="procesar3.php" method="get">
+
+        <input type="text" name="nombre" size="40">
+
+    </form>
+    <h1>Ejercicio 6</h1>
+    <form action="procesar3.php" method="get">
+
+        <input type="text" name="nombre" value="John" maxlength="5">
+
+    </form>
+    <h1>Ejercicio 7</h1>
+    <form action="procesar3.php" method="get">
+    <p>
+        nombre: <input type="text" name="nombre"><br>
+        apellido: <input type="text" name="apellido">
+    </p>
+    <input type="submit" value="enviar">
+
+    </form>
+    <h1>Ejercicio 8</h1>
+    <form action="procesar3.php" method="get">
+    <p>
+        nombre: <br><input type="text" name="nombre" placeholder="Introduce tu nombre" autofocus><br>
+        apellido: <br><input type="text" name="apellido" placeholder="Introduce tu apellido">
+    </p>
+    <input type="submit" value="enviar">
+
+    </form>
+    <h1>Ejericio 9</h1>
+    <form action="procesar3.php" method="get">
+    <p>
+        <input type="text" name="nombre" title="Introduzca tu nombre">
+    </p>
+        <input type="submit" value="enviar">
+    </form>
+    <h1>Ejercicio 10</h1>
+    <form action="procesar3.php" method="get">
+    <p>
+        codigo pais: <input type="text" name="pais" id="codigo" maxlength="5" pattern="[a-z]{3}" size="5">
+    </p>
+    <input type="submit" value="enviar">
+    </form>
+    <h1>Ejercicio 11</h1>
+    <form action="procesar3.php" method="get">
+    <p>
+        codigo pais: <input type="text" name="pais" id="codigo" maxlength="5" pattern="[a-z]{3}" size="5" title="Introduzca 3 letras">
+    </p>
+    <input type="submit" value="enviar">
+    </form>
+    <h1>Ejercicio 12</h1>
+    <form action="procesar3.php" method="get">
+    <p>
+        codigo postal: <input type="text" name="pais" id="codigo" maxlength="7" pattern="[0-9]{5}" size="5" title="Introduzca 5 numeros">
+    </p>
+    <input type="submit" value="enviar">
+    </form>
+</body>
+</html>

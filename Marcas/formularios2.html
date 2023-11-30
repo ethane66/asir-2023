@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios2</title>
+    <style>
+        fieldset {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <form action="procesar1.php" method="get">
+        <textarea name="" id="" cols="20" rows="5"></textarea>
+    </form>
+
+    <h1>Ejercicio 2</h1>
+    <form action="procesar1.php" method="get">
+        <textarea name="" id="" cols="20" rows="5">Area de texto</textarea>
+    </form>
+
+    <h1>Ejercicio 3</h1>
+
+    <form action="procesar2.php" method="get">
+        <select name="asignatura" id="asignatura">
+            <option value="LM">LM</option>
+            <option value="FH">FH</option>
+            <option value="ISO">ISO</option>
+            <option value="GBD">GBD</option>
+            <option value="FOL">FOL</option>
+        </select>
+        <p>
+            <input type="submit" value="enviar">
+        </p>
+    </form>
+
+    <h1>Ejercicoio 8</h1>
+    <form action="procesar2.php" method="get">
+        <p>
+            <label for="Usuario">Usuario</label><br>
+            <input type="text" name="Usuario" id="Usuario">
+        </p>
+        <p>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password">
+        </p>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h1>Ejercicio 9</h1>
+    <form action="procesar2.php" method="get">
+        <p>
+            <label for="Usuario">Usuario</label><br>
+            <input type="text" name="Usuario" id="Usuario">
+        </p>
+        <label for="sexo">sexo:</label><br>
+        <input type="radio" name="sexo" value="Hombre">Hombre <br>
+        <input type="radio" name="sexo" value="Mujer">Mujer <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </form>
+
+    <H1>Ejercicio 10</H1>
+    <form action="procesar2.php" method="post" enctype="multipart/form-data">
+        <p>
+            Adjuntar CV: <br>
+            <input type="file" name="CV" id="CV">
+        </p>
+        <p>
+            <input type="checkbox" name="autorizar" required>Autorizo la gestion de mis datos
+        </p>
+        <input type="submit" value="enviar">
+    </form>
+
+    <h1>Ejercicio 11</h1>
+    <form action="procesar2.php" method="post" enctype="multipart/form-data">
+        <p>
+            Adjuntar CV: <br>
+            <input type="file" name="CV" id="CV" multiple>
+        </p>
+        <p>
+            <input type="checkbox" name="autorizar" id="autorizar" required>Autorizo la gestion de mis datos
+        </p>
+        <input type="submit" value="enviar">
+    </form>
+
+    <h1>Ejercicio 12</h1>
+    <form action="procesar2.php" method="post">
+        <legend>Datos personales</legend>
+        <fieldset>
+            <label for="nombre">Nombre</label>:
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="Apellido1">Apellido1</label>
+            <input type="text" id="Apellido1" name="Apellido1"><br><br>
+        </fieldset> <br>
+
+        <legend>Datos de conexion</legend>
+        <fieldset>
+            <p>
+                <label for="Usuario">Usuario</label><br>
+                <input type="text" name="Usuario" id="Usuario">
+            </p>
+            <p>
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password">
+            </p>
+        </fieldset><br>
+        <input type="submit" value="Enviar">
+</body>
+</html>

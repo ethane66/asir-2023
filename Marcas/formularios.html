@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+<p>
+    <form action="procesar2.php" method="get">
+        <label for="nombre">Nombre</label>:
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="Apellido1">Apellido1</label>
+        <input type="text" id="Apellido1" name="Apellido1"><br><br>
+        <input type="submit" value="submit">
+    </form>
+</p>
+<h1>Ejercicio 2</h1>
+<p>
+    <form action="procesar2.php" method="get">
+       nombre: <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="Apellido1">Apellido1</label>
+        <input type="text" id="Apellido1" name="Apellido1"><br><br>
+        <label for="radio">Modulo de ASIR</label><br>
+        <input type="radio" name="asignatura" id="FH">FH <br>
+        <input type="radio" id="ISO" name="asignatura">
+        <label for="ISO">ISO</label><br>
+        <input type="radio" id="PAR" name="asignatura">
+        <label for="PAR">PAR</label><br><br>
+        <input type="submit" value="submit">
+    </form>
+</p>
+
+<h1>Ejercicio 3</h1>
+<p>
+    <form action="procesar2.php" method="post">
+        <label for="suspenso">Modulos suspensos Eval 1:</label><br>
+        <input type="radio" id="ninguno" name="suspensos">
+        <label for="uno">ninguno</label><br>
+        <input type="radio" id="uno" name="suspensos">
+        <label for="uno">uno</label><br>
+        <input type="radio" id="dos" name="suspensos">
+        <label for="uno">dos</label><br>
+        <input type="radio" id="3 o mas" name="suspensos">
+        <label for="uno">3 o mas</label><br><br>
+        <input type="submit" value="submit">
+    </form>
+</p>
+<h1>Ejercicio 4</h1>
+<p>
+    <form action="procesar2.php" method="post">
+        <label for="suspenso">Modulos suspensos Eval 1:</label><br>
+        <input type="radio" id="ninguno" name="suspensos">
+        <label for="uno">ninguno</label><br>
+        <input type="radio" id="uno" name="suspensos">
+        <label for="uno">uno</label><br>
+        <input type="radio" id="dos" name="suspensos" checked>
+        <label for="uno">dos</label><br>
+        <input type="radio" id="3 o mas" name="suspensos">
+        <label for="uno">3 o mas</label><br><br>
+        <input type="submit" value="submit">
+    </form>
+</p>
+<h1>Ejercicio 5</h1>
+<p>
+    <form action="procesar2.php" method="post">
+        <label for="nombre">Nombre</label>:
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="Apellido1">Apellido1</label>
+        <input type="text" id="Apellido1" name="Apellido1"><br><br>
+        <label for="modulos">Modulos ASIR 1:</label><br>
+        <input type="checkbox" name="modulos" id="FH">FH <br>
+        <input type="checkbox" name="modulos" id="ISO">ISO <br>
+        <input type="checkbox" name="modulos" id="PAR">PAR <br>
+        <input type="submit" value="submit">
+    </form>
+</p>
+<h1>Ejercicio 6</h1>
+
+<form action="procesar2.php" method="post">
+        <label for="modulos">Modulos convalidados ASIR 1</label><br>
+        <input type="checkbox" name="modulos2" id="FOL">
+        <label for="FOL">FOL</label><br>
+        <input type="checkbox" name="modulos2" id="LM">
+        <label for="LM">LM</label><br>
+        <input type="checkbox" name="modulos2" id="GBD">
+        <label for="GBD">GBD</label>
+        <p>
+            <input type="submit" value="submit">
+        </p>
+</form>
+<h1>Ejercicio 7</h1>
+
+<form action="procesar2.php" method="post">
+        <label for="modulos">Modulos convalidados ASIR 1</label><br>
+        <input type="checkbox" name="modulos2" id="FOL" checked>
+        <label for="FOL">FOL</label><br>
+        <input type="checkbox" name="modulos2" id="LM">
+        <label for="LM">LM</label><br>
+        <input type="checkbox" name="modulos2" id="GBD">
+        <label for="GBD">GBD</label>
+        <p>
+            <input type="submit" value="submit">
+        </p>
+</form>
+<h1>Ejercicio 8</h1>
+
+<form action="procesar2.php" method="post">
+        <label for="modulos">Modulos convalidados ASIR 1</label><br>
+        <input type="checkbox" name="modulos2" id="FOL" checked>
+        <label for="FOL">FOL</label><br>
+        <input type="checkbox" name="modulos2" id="LM" checked>
+        <label for="LM">LM</label><br>
+        <input type="checkbox" name="modulos2" id="GBD">
+        <label for="GBD">GBD</label>
+        <p>
+            <input type="submit" value="submit">
+        </p>
+</form>
+
+<h1>Ejercicio 9</h1>
+<form action="procesar2.php" method="post">
+    <legend>Datos personales</legend>
+    <fieldset style="width: 20%;">
+        <label for="nombre">Nombre</label>:
+        <input type="text" id="nombre" name="nombre"><br><br>
+        <label for="Apellido1">Apellido1</label>
+        <input type="text" id="Apellido1" name="Apellido1"><br><br>
+    </fieldset> <br>
+    <fieldset style="width: 20%;">
+        <legend>Datos academicos</legend>
+        <label for="suspenso">Modulos suspensos Eval 1:</label><br>
+        <input type="radio" id="ninguno" name="suspensos">
+        <label for="uno">ninguno</label><br>
+        <input type="radio" id="uno" name="suspensos">
+        <label for="uno">uno</label><br>
+        <input type="radio" id="dos" name="suspensos">
+        <label for="uno">dos</label><br>
+        <input type="radio" id="3 o mas" name="suspensos">
+        <label for="uno">3 o mas</label><br><br>
+        
+        <input type="checkbox" name="modulos" id="FH">
+        <label for="FH">FH</label><br>
+        <input type="checkbox" name="modulos" id="ISO">
+        <label for="ISO">ISO</label><br>
+        <input type="checkbox" name="modulos" id="PAR">
+        <label for="PAR">PAR</label><br><br>
+    </fieldset><br>
+    <input type="submit" value="enviar">
+
+
+
+
+</form>
+
+
+
+</body>
+</html>
