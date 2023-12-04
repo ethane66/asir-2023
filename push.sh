@@ -9,4 +9,5 @@ git push
 
 sleep 2s
 
-exit
+
+
