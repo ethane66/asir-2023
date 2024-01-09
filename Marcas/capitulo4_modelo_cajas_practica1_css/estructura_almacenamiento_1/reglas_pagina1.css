@@ -1,0 +1,11 @@
+body {			
+	/* 	background-image: url("fondo3.jpg");
+		background-repeat: repeat-x;
+		background-position: center;  
+	*/
+				
+	/* 	background: url("fondo3.jpg") repeat-x center; */
+		background: url("fondo3.jpg") repeat-x 50%;  
+			
+		background-color: #E5FFB3;				
+}
