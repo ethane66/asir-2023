@@ -1,0 +1,27 @@
+table, th, td {
+    border: 1px solid black;
+}
+
+th,td {
+    padding: 1em;
+}
+
+.verde1 {
+    background-color: #690;
+    color: #306;
+}
+
+.verde2 {
+    background-color: #6F3;
+}
+
+.dolar {
+    background-image: url(../imagenes/dolar.png);
+    background-position: left;
+    background-repeat: repeat-y;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
