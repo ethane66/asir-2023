@@ -12,7 +12,7 @@
 3. Visualiza el apellido, oficio, jefe y fecha de alta de los empleados que tienen un jefe
 asignado y su fecha de alta es del 15 de Noviembre del 1981 al 25 de Mayo de 1982.
 
-    select apellido,oficio,director,fecha_alta from empleados where director not null and fecha_alta between '1981-11-15' and '1981-05-25';
+    select apellido,oficio,director,fecha_alta from empleados where director is not null and fecha_alta between '1981-11-15' and '1982-05-25';
 
 4. Visualiza el apellido, oficio, jefe, fecha de alta y nº de departamento de los empleados que
 no tienen un jefe asignado y su fecha de alta es en 1981 o son del departamento 20.
@@ -28,17 +28,21 @@ contenga una 'o' o sean del departamento 30 y su jefe sea el 7698.
 'ez' y no sean del departamento 30. Etiqueta o nombra las columnas como "Empleado" y
 "Código departamento" respectivamente.
 
-    select apellido, dep_no from empleados where apellido like '%ez' and dep_no not like 20;
+    select apellido as 'Empleado', dep_no as 'Codigo departamento' from empleados where apellido like '%ez' and dep_no not like 30;
+
+    select apellido "Empleado", dep_no "Codigo departamento" from empleados where apellido like '%ez' and dep_no not like 30;
 
 7. Visualiza descripción, precio actual, precio rebajado un 5% y stock disponible de los
 productos cuya cantidad en stock es menor que 25 o su precio actual es superior a 500 euros.
 
-
+    select descripcion, precio_actual,precio_actual*0.95 as 'Precio rebajado',stock_disponible from productos where stock_disponible <= 20 or precio_actual > 500;
 
 8. Visualiza apellido, fecha de alta, salario, comisión y precio total de los empleados que no
 pertenecen al departamento 10 o entraron en la empresa después del verano de 1981. El
 precio total es salario+comisión, consideramos que la comisión de los empleados cuyo valor
 es NULL es 0.
+
+    select apellido, fecha_alta, salario, coalesce(comision,0) as comision, salario+ coalesce(comision,0) as precio_total from empleados where dep_no not like 30 or fecha_alta > '1981-06-%';
 
 
 
