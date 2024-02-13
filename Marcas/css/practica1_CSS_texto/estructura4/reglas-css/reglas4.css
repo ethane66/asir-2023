@@ -1,0 +1,14 @@
+body {
+  line-height: 1.5em;
+  word-spacing: 0.7em;
+}
+
+#p2::first-letter {
+    font-variant: small-caps;
+    font-size: 200%;
+}
+
+#p3::first-line {
+    font-style: italic;
+    text-decoration: underline;
+}
