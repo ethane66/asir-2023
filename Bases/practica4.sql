@@ -42,7 +42,11 @@ pertenecen al departamento 10 o entraron en la empresa después del verano de 19
 precio total es salario+comisión, consideramos que la comisión de los empleados cuyo valor
 es NULL es 0.
 
+/* Preguntar a carmen */
+
     select apellido, fecha_alta, salario, coalesce(comision,0) as comision, salario+ coalesce(comision,0) as precio_total from empleados where dep_no not like 30 or fecha_alta > '1981-06-%';
 
+/* metodo carmen */
 
+select apellido,fecha_alta,salario,comision,salario+IFNULL(comision,0) as 'salario total' from empleados where dep_no != 10 or fecha_alta > '1981-06-01';
 

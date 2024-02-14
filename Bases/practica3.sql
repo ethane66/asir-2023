@@ -38,7 +38,7 @@ comisión es 0, no debe mostrarse).
 10. Obtener la descripción de los productos que empiezan por ‘A’ y tengan una ‘T’ en su
 interior.
 
-    select descripcion from productos where descripcion like 'A%t'
+    select descripcion from productos where descripcion like 'A%t%'
 
 11. Obtener los apellidos de los empleados con tres caracteres y terminen por ‘L’.
 
@@ -56,7 +56,7 @@ caracteres ‘MOD’.
 14. Consultar los pedidos que se han realizado entre el 3 de Noviembre de 1999 y el 5 de
 Octubre de 1999.
 
-    select * from pedidos where fecha_pedido between '1999-10-5' and '1999-11-3';
+    select * from pedidos where fecha_pedido between '1999-10-05' and '1999-11-03';
 
 15. Visualizar apellido, oficio, fecha de alta y salario de los empleados que entraron en la
 empresa en el año 1981.

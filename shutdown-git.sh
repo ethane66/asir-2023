@@ -10,4 +10,4 @@ delay_seconds=$((delay_minutes * 60))
 ./push.sh
 
 # Initiate shutdown after the delay
-shutdown /s /t $delay_seconds 
+shutdown -s -t $delay_seconds 
