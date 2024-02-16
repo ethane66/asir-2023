@@ -1,0 +1,11 @@
+Listas no ordenadas: Una lista sin orden comienza con el <ul> etiqueta. Cada elemento de la lista comienza con el <li> etiqueta.
+Los elementos de la lista se marcarán con balas (pequeños círculos negros) por defecto.
+
+Listas ordenadas: Una lista ordenada comienza con el <ol> etiqueta. Cada elemento de la lista comienza con el <li> etiqueta.
+Los elementos de la lista serán marcados con los números por defecto.
+
+Listas anidadas: Los elementos de lista pueden contener nueva lista.
+
+
+
+

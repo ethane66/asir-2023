@@ -1,0 +1,19 @@
+.num {
+    list-style-type: decimal;
+}
+
+.letramin {
+    list-style-type: lower-alpha;
+}
+
+.letramayu {
+    list-style-type: upper-alpha;
+}
+
+.romanmayu {
+    list-style-type: upper-roman;
+}   
+
+.romanminu {
+    list-style-type: lower-roman;
+}
