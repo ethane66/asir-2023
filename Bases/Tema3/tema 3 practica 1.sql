@@ -29,7 +29,7 @@ Tabla platos_2:
 
     create table platos_2 (
         ID_PLATO varchar(10) primary key,
-        DESC_PLATO varchar(100),
+        DESC_PLATO varchar(100),5
         INGREDIENTES varchar(100),
         PRECIO float(10,2) NOT NULL
     );
@@ -40,10 +40,10 @@ Tabla detalle_pedido2:
         ID_PEDIDO varchar(10),
         ID_PLATO varchar(10),
         NUM_PLATOS int(2) NOT NULL default 1,
-        /*Definiar clave primaria compuesta */
+        /*Definir clave primaria compuesta */
         constraint PK_DETALLE_PEDIDO_2_PEDIDOS_2
         primary key (ID_PEDIDO,ID_PLATO),
-        /*Defonir un campo clave ajena */
+        /*Definir un campo clave ajena */
         constraint FK_DETALLE_PEDIDO_2_PEDIDOS_2
         foreign key detalle_pedido2 (ID_PEDIDO)
         references pedidos_2 (ID_PEDIDO),

@@ -6,7 +6,7 @@ insert into clientes_2 (
         TELEFONO
 )
 values (
-    'CLI_0001','Roberto','C/ROSAS 4', 'Torrejon','91780567'
+    'CLI_0004','Espino','C/Peral 4', 'Torrejon','917805678'
 );
 
 insert into clientes_2 (
@@ -39,7 +39,7 @@ insert into pedidos_2 (
 )
 
 values (
-    'PED_1000','CLI_0002','12/02/13','1650'
+    'PED_1000','CLI_0002','12/02/13','16.50'
 );
 
 insert into pedidos_2 (
@@ -50,7 +50,7 @@ insert into pedidos_2 (
 )
 
 values (
-    'PED_1001','CLI_0001','13/02/12','4570'
+    'PED_1001','CLI_0001','13/02/12','45.70'
 );
 
 insert into pedidos_2 (
@@ -61,7 +61,7 @@ insert into pedidos_2 (
 )
 
 values (
-    'PED_1003','CLI_0003','17/02/13','560'
+    'PED_1003','CLI_0003','17/02/13','5.60'
 );
 
 insert into platos_2 (
@@ -116,4 +116,16 @@ insert into detalle_pedido2 (
 )
 values (
     'PED_1001','PLA_0002','6'
+);
+
+
+insert into platos_2 (
+        ID_PLATO,
+        DESC_PLATO ,
+        INGREDIENTES ,
+        PRECIO 
+)
+
+values (
+    'PLA_0003','pollo','Pollo y patatas','8'
 );
