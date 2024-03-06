@@ -4,7 +4,7 @@ create database tema4_practica3;
 create table socios (
     socio_no int(4) primary key,
     apellidos varchar(14) UNIQUE,
-    telefono int(9) not NULL,
+    telefono char(9) not NULL, /* si pone alfanumerica es varchar pero como pone fijo es char */
     fecha_alta date default '2000-01-01',
     direccion varchar (20),
     codigo_postal int(5)
@@ -14,7 +14,9 @@ create table socios (
 CREATE TABLE prestamos (
   num_prestamos INT(4) PRIMARY KEY,
   socio_no INT(4),
-  FOREIGN KEY (socio_no) REFERENCES socios(socio_no)
+  constraint fk_prestamos_socios /*Opcional, se pone el noimbre de la tabla en la que estas a la que haces referencia */
+  FOREIGN KEY prestamos(socio_no) /*Se pone el campo de la tabla en la que haces la FK, ej ejemplo en la tabla prestamos se hace la fk en el socio_no*/
+  REFERENCES socios(socio_no) /* se pone la tabla y campo de la tabla a la que hace referencia, ej de la tabla socios se pide socio_no */
 );
 --insertar datos en socios
 INSERT INTO socios
@@ -48,13 +50,18 @@ VALUES (1,1001);
 insert into prestamos (num_prestamos,socio_no)
 VALUES (2,1002);
 
+insert into prestamos (num_prestamos,socio_no)
+VALUES (3,1003);
+
 --Ejercicio 4 consultas
-    select socio_no,telefono from socios where direccion like '%PANADEROS%';
-+----------+----------+
-| socio_no | telefono |
-+----------+----------+
-|     1003 |        0 |
-+----------+----------+
+    select socio_no,telefono from socios where direccion like 'C.PANADEROS%' or fecha_alta between '2005-01-01' and '2005-01-15';
++----------+-----------+
+| socio_no | telefono  |
++----------+-----------+
+|     1000 | 916543267 |
+|     1001 | 918451256 |
+|     1003 |           |
++----------+-----------+
 
 --Ejercicio 6 insertar 
 insert into prestamos (num_prestamos,socio_no)
