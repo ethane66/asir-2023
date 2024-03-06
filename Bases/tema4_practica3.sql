@@ -70,4 +70,4 @@ VALUES (4,1002);
 Si ha sido posible porque el num_prestamos es la PK no el socio_no
 
 --Ejercicio 12 modificar estructura
-alter table socios drop column codigo_postal;
+alter table socios drop codigo_postal;
