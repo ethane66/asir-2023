@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos [
+    <!ELEMENT alumnos (alumno+)>
+    <!ELEMENT alumno (nombre,direccion,ciudad,codigo,telefono)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT direccion (#PCDATA)>
+    <!ELEMENT ciudad (#PCDATA)>
+    <!ELEMENT codigo (#PCDATA)>
+    <!ELEMENT telefono (#PCDATA)>    
+]>
+<alumnos>
+    <alumno>
+        <nombre>pepe</nombre>
+        <direccion>avda. de la constitución</direccion>
+        <ciudad>sevilla</ciudad>
+        <codigo>41001</codigo>
+        <telefono>954000000</telefono>
+    </alumno>
+</alumnos>
