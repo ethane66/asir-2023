@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE personas [
+<!ELEMENT personas (persona+)>
+<!ELEMENT persona (nombre,apellido1,apellido2)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido1 (#PCDATA)>
+<!ELEMENT apellido2 (#PCDATA)>
+]>
+<personas>
+<persona>
+<nombre>Rosa</nombre>
+<apellido1>Casas</apellido1>
+<!-- <apellido2>Rueda</apellido2> -->
+</persona>
+<persona>
+<apellido1>Fuentes</apellido1>
+<apellido2>Río</apellido2>
+<nombre>Sergio</nombre>
+</persona>
+</personas>
