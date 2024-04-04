@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="practica3_tema1.dtd" type="text/xsl"?>
+<?xnml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE personas SYSTEM "practica3_tema1.dtd">
 <personas>
   <persona nacionalidad="española" sexo="mujer" id_persona="A1111">
     <nombre>Rosa</nombre>

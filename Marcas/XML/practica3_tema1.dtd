@@ -1,6 +1,5 @@
 <!ELEMENT personas (persona+)>
-<!ELEMENT persona (nombre+, apellido1, apellido2, telefono*, direccion)>
-<!ELEMENT sexo (#PCDATA)>
+<!ELEMENT persona (nombre+, apellido1, apellido?, telefono?, direccion)>
 <!ELEMENT nacionalidad (#PCDATA)>
 <!ATTLIST persona sexo (hombre|mujer) #REQUIRED>
 <!ATTLIST persona id_persona CDATA #REQUIRED>
@@ -9,7 +8,7 @@
 <!ELEMENT apellido1 (#PCDATA)>
 <!ELEMENT apellido2 (#PCDATA)>
 <!ELEMENT telefono (#PCDATA)>
-<!ELEMENT direccion (via, nombrevia, numero, piso, puerta, poblacion, ciudad)>
+<!ELEMENT direccion (via, numero, piso, puerta, poblacion, ciudad)>
 <!ELEMENT via (#PCDATA)>
 <!ATTLIST via tipo CDATA #REQUIRED>
 <!ELEMENT numero (#PCDATA)>
