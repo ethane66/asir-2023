@@ -14,4 +14,4 @@
 <!ELEMENT ciudad (#PCDATA)>
 <!ATTLIST persona sexo (hombre|mujer) #REQUIRED>
 <!ATTLIST persona id_persona CDATA #REQUIRED>
-<!ATTLIST persona nacionalidad CDATA >
+<!ATTLIST persona nacionalidad CDATA > 
