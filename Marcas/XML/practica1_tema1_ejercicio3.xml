@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE listalibros SYSTEM "ejercicio3.dtd">
+<listalibros>
+<libro>
+<titulo>Photoshop 5.5</titulo>
+<autor>Michael Karbo</autor>
+<autor>Peter G. Christiansen</autor>
+<editorial>PC Cuadernos</editorial>
+<precio>4</precio>
+</libro>
+<libro>
+<titulo>Cree su página Web (I)</titulo>
+<autor>Johann-Christian Hanke</autor>
+<editorial>PC Cuadernos</editorial>
+<descripcion>Introducción a HTML</descripcion>
+<precio>4</precio>
+</libro>
+<libro>
+<titulo>El registro de Windows</titulo>
+<autor>David Bosman</autor>
+<editorial>PC Cuadernos</editorial>
+<descripcion>Trucos para editar el registro</descripcion>
+<precio>4</precio>
+</libro>
+</listalibros>

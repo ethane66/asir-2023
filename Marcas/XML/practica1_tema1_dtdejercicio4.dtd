@@ -1,0 +1,5 @@
+<!ELEMENT personas (persona+)>
+<!ELEMENT persona (nombre, email*)>
+ <!ATTLIST persona sexo (hombre | mujer) #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT email (#PCDATA)>

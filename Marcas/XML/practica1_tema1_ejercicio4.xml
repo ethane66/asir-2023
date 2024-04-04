@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas>
+  <persona sexo="hombre">
+    <nombre>Juan Pérez</nombre>
+    <email>juan.perez@ejemplo.com</email>
+  </persona>
+  <persona sexo="mujer">
+    <nombre>Ana García</nombre>
+    <email>ana.garcia@ejemplo.com</email>
+    <email>ana.garcia2@ejemplo.com</email>
+  </persona>
+</personas>
