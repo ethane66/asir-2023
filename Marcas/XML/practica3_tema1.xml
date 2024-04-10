@@ -1,56 +1,62 @@
-<?xnml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE personas SYSTEM "practica3_tema1.dtd">
 <personas>
-  <persona nacionalidad="española" sexo="mujer" id_persona="A1111">
-    <nombre>Rosa</nombre>
-    <apellido1>Casas</apellido1>
-    <apellido2>Rueda</apellido2>
-    <direccion>
-      <via tipo="Calle">Juncal</via>
-      <numero>1</numero>
-      <piso>1º</piso>
-      <puerta>A</puerta>
-      <poblacion codigo="28850">Torrejón de Ardoz</poblacion>
-      <ciudad>Madrid</ciudad>
-    </direccion>
-  </persona>
-  <persona sexo="hombre" id_persona="B2222">
-    <nombre>Sergio</nombre>
-    <apellido1>Fuentes</apellido1>
-    <apellido2>Rio</apellido2>
-    <telefono>911111111</telefono>
-    <direccion>
-      <via tipo="Calle">Londres</via>
-      <numero>2</numero>
-      <piso>2º</piso>
-      <puerta>B</puerta>
-      <poblacion codigo="28850">Torrejón de Ardoz</poblacion>
-      <ciudad>Madrid</ciudad>
-    </direccion>
-  </persona>
-  <persona nacionalidad="francesa" sexo="mujer" id_persona="C3333">
-    <nombre>Lorena</nombre>
-    <apellido1>Madrid</apellido1>
-    <telefono>912222222</telefono>
-    <direccion>
-      <via tipo="Avenida">Constitución</via>
-      <numero>3</numero>
-      <piso>3º</piso>
-      <puerta>C</puerta>
-      <poblacion codigo="28850">Torrejón de Ardoz</poblacion>
-      <ciudad>Madrid</ciudad>
-    </direccion>
-  </persona>
-  <persona id_persona="D4444">
-    <nombre>Carlos</nombre>
-    <apellido1>Flores</apellido1>
-    <direccion>
-      <via tipo="Plaza">Mayor</via>
-      <numero>4</numero>
-      <piso>4º</piso>
-      <puerta>D</puerta>
-      <poblacion codigo="28830">San Fernando de Henares</poblacion>
-      <ciudad>Madrid</ciudad>
-    </direccion>
-  </persona>
+    <persona nacionalidad="española" sexo="mujer" id_persona="A1111">
+        <nombre>Rosa</nombre>
+        <nombre>Clara</nombre>
+        <apellido1>Casas</apellido1>
+        <apellido2>Rueda</apellido2>
+        <direccion>
+            <via tipo="Calle" />
+            <nombrevia>Juncal</nombrevia>
+            <numero>1</numero>
+            <piso>1º</piso>
+            <puerta>A</puerta>
+            <poblacion codigo="28850">Torrejón de Ardoz</poblacion>
+            <ciudad>Madrid</ciudad>
+        </direccion>
+    </persona>
+    <persona sexo="hombre" id_persona="B2222">
+        <nombre>Sergio</nombre>
+        <apellido1>Fuentes</apellido1>
+        <apellido2>Rio</apellido2>
+        <telefono>911111111</telefono>
+        <direccion>
+            <via />
+            <nombrevia>Londres</nombrevia>
+            <numero>2</numero>
+            <piso>2º</piso>
+            <puerta>B</puerta>
+            <poblacion codigo="28850">Torrejón de Ardoz</poblacion>
+            <ciudad>Madrid</ciudad>
+        </direccion>
+    </persona>
+    <persona nacionalidad="francesa" sexo="mujer" id_persona="C3333">
+        <nombre>Lorena</nombre>
+        <apellido1>Madrid</apellido1>
+        <telefono>912222222</telefono>
+        <telefono>601222222</telefono>
+        <direccion>
+            <via tipo="Avenida" />
+            <nombrevia>Constitución</nombrevia>
+            <numero>3</numero>
+            <piso>3º</piso>
+            <puerta>C</puerta>
+            <poblacion codigo="28850">Torrejón de Ardoz</poblacion>
+            <ciudad>Madrid</ciudad>
+        </direccion>
+    </persona>
+    <persona id_persona="D4444">
+        <nombre>Carlos</nombre>
+        <apellido1>Flores</apellido1>
+        <direccion>
+            <via tipo="Plaza" />
+            <nombrevia>Mayor</nombrevia>
+            <numero>4</numero>
+            <piso>4º</piso>
+            <puerta>D</puerta>
+            <poblacion codigo="28830">San Fernando de Henares</poblacion>
+            <ciudad>Madrid</ciudad>
+        </direccion>
+    </persona>
 </personas>
