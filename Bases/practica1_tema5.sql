@@ -68,4 +68,5 @@ pagas) ordenado de mayor a menor por este salario total. ---------
 15. Obtener clasificación alfabética de empleados según su apellido y mostrar desde el 5º hasta
 el 7º de la lista.
 
+
     select * from empleados order by apellido 4,3
