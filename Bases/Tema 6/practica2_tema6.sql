@@ -51,8 +51,9 @@ número de producto y la suma de sus unidades.
         count(emp_no) as 'Nºempleados'
     from empleados
     group by dep_no
-    order by emp_no desc 
+    order by 2 desc 
     limit 1;
 
 
 7. Seleccionar los oficios que tengan dos o más empleados.
+
