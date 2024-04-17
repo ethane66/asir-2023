@@ -1,0 +1,28 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="personas">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="persona" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="nombre" type="xsd:string" maxOccurs="unbounded"/>
+                            <xsd:element name="apellido1" type="xsd:string"/>
+                            <xsd:element name="apellido2" type="xsd:string" minOccurs="0"/>
+                            <xsd:element name="telefono" type="xsd:integer"/>
+                            <xsd:element name="edad">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:integer">
+                                        <xsd:minInclusive value="0"/>
+                                        <xsd:maxInclusive value="110"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                        </xsd:sequence>
+                        <xsd:attribute name="nacionalidad" type="xsd:string" use="optional"/>
+                        <xsd:attribute name="id_persona" type="xsd:string" use="required"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

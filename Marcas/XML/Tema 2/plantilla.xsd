@@ -1,0 +1,29 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="________________________">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="___________________" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="___________" type="___________"/>
+                            <xsd:element name="___________">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="___________">
+                                        <xsd:minInclusive value="___________"/>
+                                        <xsd:maxInclusive value="___________"/>
+                                        <xsd:enumeration value="___________"/>
+                                        <xsd:pattern value="___________"/>
+                                        <xsd:length value="____________"/>
+                                        <xsd:minLength value="___________"/>
+                                        <xsd:maxLength value="___________"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                        </xsd:sequence>
+                        <xsd:attribute name="_________" type="_________" use="_________"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
