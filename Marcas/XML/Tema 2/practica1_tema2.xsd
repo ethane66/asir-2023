@@ -1,0 +1,65 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="personas">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="persona" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <!--Estas no tienen restriciones -->
+                            <xsd:element name="nombre" type="xsd:string" maxOccurs="unbounded"/>
+                            <xsd:element name="apellido1" type="xsd:string"/>
+                            <xsd:element name="apellido2" type="xsd:string" minOccurs="0"/>
+                            <xsd:element name="telefono" type="xsd:integer" minOccurs="0" maxOccurs="2"/>
+                            <!-- Las que estan abajo tienen restriciones -->
+                            <xsd:element name="edad" minOccurs="0">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:integer">
+                                        <xsd:minInclusive value="0"/>
+                                        <xsd:maxInclusive value="110"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                            <xsd:element name="lugar_nacimiento">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:minLength value="4"/>
+                                        <xsd:maxLength value="45"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+
+                            <xsd:element name="codigo_postal">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:integer">
+                                        <xsd:pattern value="[0-9]{5}"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                        </xsd:sequence>
+                        <!-- Los atributos -->
+                        <xsd:attribute name="nacionalidad" type="xsd:string" use="optional"/>
+                        <xsd:attribute name="id_persona" type="xsd:string" use="required"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
+
+<!-- Numero de veces que aparece cada elemento en las
+personas
+    persona 4
+        nombre 2 1 1 1
+        apellido1 1 1 1 1
+        apellido2 1 1 0 0
+        telefono 0 1 2 0
+        edad 1 0 1 0
+        lugar_nacimiento 1 1 1 1
+        codigo_postal 1 1 1 1
+
+        atributos que salen
+        nacionalidad 1 0 1 0
+        id_persona 1 1 1 1
+
+-->
