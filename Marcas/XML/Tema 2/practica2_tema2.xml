@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<personas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="practica2_tema2.xsd">
+
+    <persona nacionalidad="española" id_persona="A1111">
+        <nombre>Rosa</nombre>
+        <nombre>Clara</nombre>
+        <apellido1>Casas</apellido1>
+        <apellido2>Rueda</apellido2>
+        <edad>23</edad>
+        <ocupacion>Estudiante</ocupacion>
+        <codigo_ocupacion>EstCGS01</codigo_ocupacion>
+    </persona>
+    <persona id_persona="B2222">
+        <nombre>Sergio</nombre>
+        <apellido1>Fuentes</apellido1>
+        <apellido2>Rio</apellido2>
+        <telefono>911111111</telefono>
+        <ocupacion>Parado</ocupacion>
+        <codigo_ocupacion>Parado02</codigo_ocupacion>
+    </persona>
+    <persona nacionalidad="francesa" id_persona="C3333">
+        <nombre>Lorena</nombre>
+        <apellido1>Madrid</apellido1>
+        <telefono>912222222</telefono>
+        <telefono>601222222</telefono>
+        <edad>27</edad>
+        <ocupacion>Activo</ocupacion>
+        <codigo_ocupacion>Profes03</codigo_ocupacion>
+    </persona>
+    <persona id_persona="D4444">
+        <nombre>Carlos</nombre>
+        <apellido1>Flores</apellido1>
+    </persona>
+</personas>

@@ -1,0 +1,67 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="personas">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="persona" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="nombre" type="xsd:string" maxOccurs="unbounded"/>
+                            <xsd:element name="apellido1" type="xsd:string" maxOccurs="unbounded"/>
+                            <xsd:element name="apellido2" type="xsd:string" minOccurs="0"/>
+                            <xsd:element name="telefono" type="xsd:integer" minOccurs="0" maxOccurs="unbounded"/>
+                            <xsd:element name="edad">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:integer">
+                                        <xsd:minInclusive value="0"/>
+                                        <xsd:maxInclusive value="110"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="ocupacion">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:enumeration value="Estudiante"/>
+                                        <xsd:enumeration value="Activo"/>
+                                        <xsd:enumeration value="Parado"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                            <xsd:element name="codigo_ocupacion">
+                                <xsd:simpleType>
+                                    <xsd:restriction base="xsd:string">
+                                        <xsd:pattern value="[A-Za-z0-9]{8}"/>
+                                    </xsd:restriction>
+                                </xsd:simpleType>
+                            </xsd:element>
+                        </xsd:sequence>
+                        <xsd:attribute name="nacionalidad" type="xsd:string" use="optional"/>
+                        <xsd:attribute name="id_persona" type="xsd:string" use="required"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
+
+
+<!--
+
+numero de veces que aparaece el elemento persona
+nombre 2 1 1 1
+apellido1 1 1 1 1
+apellido2 1 1 0 0
+telefono 0 1 2 0
+edad 1 0 1 0
+ocupacion 1 1 1 0
+codigo_ocupacion 1 1 1 0 
+
+elementos que tienen restrinciones
+edad esta entre 0 y 110
+ocupacion solo puede ser estudiante,activo,parado
+codigo ocupacion tiene 8 caracteres, puede ser letras Mayus y Miniusculas y numeros
+
+atributos
+nacionalidad 1 0 1 0
+id_persona 1 1 1 1
+
+-->
