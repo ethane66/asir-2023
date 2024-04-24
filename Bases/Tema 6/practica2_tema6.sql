@@ -57,3 +57,9 @@ número de producto y la suma de sus unidades.
 
 7. Seleccionar los oficios que tengan dos o más empleados.
 
+select 
+    oficio,
+    count(*) as 'Nº Empleados'
+from empleados
+group by oficio
+    having count(*)>=2;
