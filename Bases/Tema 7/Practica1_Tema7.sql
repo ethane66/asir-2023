@@ -12,7 +12,10 @@ where dep_no in (select distinct dep_no
 
 2.Visualizar los nombres de los departamentos que tengan empleados trabajando en ellos.
 
-
+select 
+    dnombre
+from departamentos
+where dep_no in(select dep_no from empleados where comision is not null);
 
 3.Visualizar el nombre de aquellos departamentos en los que al menos exista un empleado con
 comisión no nula.
