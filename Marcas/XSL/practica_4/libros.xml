@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="libros.xsl"?>
+<listalibros>
+    <libro>
+        <titulo> Photoshop 5.5 </titulo>
+        <autor> Michael Karbo </autor>
+    </libro>
+    <libro>
+        <titulo> Cree su página Web </titulo>
+        <autor> Johann-Christian </autor>
+    </libro>
+</listalibros>
