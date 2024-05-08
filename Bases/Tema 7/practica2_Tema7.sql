@@ -14,6 +14,7 @@ where salario > (select max(salario) from empleados where dep_no = 30);
 select emp_no as 'Numero empleado',apellido,dep_no from empleados
 where dep_no not in (select dep_no from departamentos where localidad = 'MADRID' or localidad='BARCELONA');
 
+-- Manera de carmen --
 select emp_no as 'Numero empleado',apellido,dep_no from empleados
 where dep_no in (select dep_no from departamentos where localidad not in ('madrid','barcelona'));
 
