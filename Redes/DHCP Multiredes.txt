@@ -1,0 +1,6 @@
+interface Fa0/0
+ip helper-address red en la que estas IP del servidor DHCP
+exit
+interface Fa1/0
+ip helper-address red en la que estas IP del servidor DHCP
+exit
