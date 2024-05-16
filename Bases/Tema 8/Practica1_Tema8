@@ -71,7 +71,10 @@ c.limite_credito,
 c.vendedor_no,
 e.apellido,
 e.oficio,
-d.dep_no,
+d.dnombre,
 d.localidad
 from clientes c, empleados e, departamentos d
 where c.vendedor_no = e.emp_no and e.dep_no = d.dep_no;
+
+select clientes.cliente_no, clientes.nombre, clientes.limite_credito, clientes.vendedor_no, empleados.apellido, empleados.oficio, departamentos.dnombre, departamentos.localidad from empleados, clientes, departamentos where empleados.emp_no = clientes.vendedor_no and empleados.dep_no = departamentos.dep_no
+order by limite_credito;
