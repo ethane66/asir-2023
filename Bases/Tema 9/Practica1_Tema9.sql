@@ -8,9 +8,9 @@ vendedor. La tabla VENDEDORES debe incluir los siguientes campos de la tabla EMP
 EMP_NO, APELLIDO, DIRECTOR, SALARIO, COMISION y DEP_NO.
 
 create table vendedores
-    -> select emp_no,apellido,director,salario,comision,dep_no
-    -> from empleados
-    -> where oficio = 'vendedor';
+     select emp_no,apellido,director,salario,comision,dep_no
+     from empleados
+     where oficio = 'vendedor';
 
 3. Muestra los datos de la tabla VENDEDORES.
 
@@ -73,7 +73,9 @@ vendedores que ganan más de 1400 euros. Ordenado descendentemente por SALARIO.
 LOCALIDAD de la tabla DEPARTAMENTOS, de todos los vendedores. Ordenado ascendentemente
 por DEP_NO.
 
-
+select v.emp_no,v.apellido,v.dep_no,d.dnombre,d.localidad
+from vendedores v, departamentos d
+order by v.dep_no;
 
 11. Mostrar EMP_NO, APELLIDO , DIRECTOR y apellido del DIRECTOR de la tabla
 VENDEDORES. Ordenado alfabéticamente por APELLIDO del vendedor (no el de su director).

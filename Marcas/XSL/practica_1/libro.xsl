@@ -4,11 +4,11 @@
         <html>
             <head>
                 <title></title>
-                <link rel="stylesheet" type="text/css" href="libro.css"/>
+                <link rel="stylesheet" type="text/css" href="lirbo.css"/>
             </head>
             <body>
-                <p><xsl:value-of select="listalibros/libro/titulo"/></p>
-                <p><xsl:value-of select="listalibros/libro/autor"/></p>
+                <xsl:value-of select="listalibros/libro/titulo"/>
+                <xsl:value-of select="listalibros/libri/autor"/>
             </body>
         </html>
     </xsl:template>
